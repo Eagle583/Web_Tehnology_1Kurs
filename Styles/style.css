@@ -1,0 +1,42 @@
+html, body {
+  background-color: black;
+}
+header{
+    background-color: rgb(95,95,95);
+}
+
+.Background{
+    background-image: url("../Images/2212-x01.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 675px;
+    backdrop-filter:blur(50px);
+}
+h1,p{
+    color:white;
+}
+.Screenshoots{
+    border-style: groove;
+    border-radius: 10px;
+    border-color: aqua;
+}
+
+.Text{
+    border-style:dashed;
+    border-width: 10px;
+    border-color: red;
+}
+
+
+.oln{
+    margin: 0;
+}
+
+section,article{
+    background-color: rgb(24,21,18);
+}
+
+a{
+    color:black;
+    text-decoration: none;
+}

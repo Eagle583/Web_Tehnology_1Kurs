@@ -1,40 +1,83 @@
 html, body {
   background-color: black;
 }
+
+
 header{
-    background-color: rgb(95,95,95);
+    background: linear-gradient(180deg,#181512,#181512 24.27%,#181512cc 71.5%,#181512b3 78.4%,#18151299 81.85%,#18151280 85.08%,#18151266 88.53%,#1815124d 91.55%,#18151233 94.14%,#1815121a 97.37%,#18151200);
     position: sticky;
     top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.headerimg{
+    width: auto;
+    height: 45px;
+    border-radius: 10px;
 }
 
 .Background{
     background-image: url("../Images/2212-x01.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    padding-bottom: 675px;
     background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin-top: -70px;
+}
+
+.LogoC{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
 }
 h1,p{
     color:white;
 }
-.Screenshoots{
-    outline-style: dashed;
-    outline-color: purple;
-    outline-width: 20px;
-    border-style: groove;
+
+.logo {
+  width: auto;
+  height: 200px;
+}
+
+.logo1{
+    padding-left: 10px;
+}
+
+.logo2{
+    margin-left: 20px; 
+}
+
+.button{
+    display: flex;
+    gap:20px;
+}
+
+.button img{
+    width: auto;
+    height: 50px;
     border-radius: 10px;
-    border-color: aqua;
 }
 
 .Text{
-    border-style:dashed;
-    border-width: 10px;
-    border-color: red;
+    padding: 50px;
 }
 
 
 .oln{
     margin: 0;
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    padding:0;
+    margin:0;
+    list-style-type: none;
 }
 
 section,article{
@@ -46,6 +89,13 @@ a{
     text-decoration: none;
 }
 
+.oln li a {
+  font-weight: bold;
+  font-style:normal; 
+  font-size:large;
+  color:white;
+}
+
 .Pidtrimka{
     position: fixed;
 }
@@ -53,4 +103,54 @@ a{
 .padding{
     padding: 10px;
     margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.padding1{
+    padding-top: 10px;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 40px 30px;
+    width: auto;
+    height: auto;
+    padding-left: 80px;
+    padding-bottom: 100px;
+}
+
+.padding1 img{
+    border-radius: 10px;
+}
+
+
+.nav1 {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  width: auto;
+  max-width: 100%; 
+}
+
+nav {
+  flex-grow: 1;
+}
+
+.Stalker1{
+    display: flex;
+    justify-content:center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+
+.Photo{
+    display: flex;
+    align-items: center;
+}
+.Photo img{
+    width: auto;
+    height: 300px;
+    border-radius: 10px;
 }

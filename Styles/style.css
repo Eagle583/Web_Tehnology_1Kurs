@@ -31,6 +31,8 @@ header{
     margin-top: -70px;
 }
 
+
+
 .LogoC{
     display: flex;
     flex-direction: column;
@@ -48,10 +50,14 @@ h1,p{
 
 .logo1{
     padding-left: 10px;
+    width: auto;
+    height: 70px;
 }
 
 .logo2{
-    margin-left: 20px; 
+    margin-left: 20px;
+    width: auto;
+    height: 70px;
 }
 
 .button{
@@ -148,9 +154,157 @@ nav {
 .Photo{
     display: flex;
     align-items: center;
+    padding-top: 15px;
 }
 .Photo img{
     width: auto;
-    height: 300px;
+    height: 40vh;
     border-radius: 10px;
+}
+
+.hr{
+    width:500px; 
+    height:25px;
+}
+
+
+
+@media (max-width: 1280px){
+
+
+  .padding1 img {
+    width: 50%;
+  }
+
+  .logo{
+    max-width: 82%;
+    height: auto;
+  }
+
+  .logo1{
+    display: none;
+  }
+
+  .logo2{
+    display: none;
+  }
+
+  .headerimg{
+    height: 20px;
+  }
+
+  .Photo{
+    flex-direction: column;
+  }
+
+  .Photo img{
+    max-width: 100%;
+    height: auto;
+  }
+
+  .button img{
+    max-width: 70%;
+    height: auto;
+  }
+
+  .button a{
+    display: flex;
+    justify-content: center;
+  }
+
+  .button{
+    padding-top: 10px;
+  }
+
+  .oln{
+    gap: 0;
+    justify-content: space-evenly;
+  }
+
+  .padding1 img{
+    width: 75%;
+    height: auto;
+  }
+
+  .padding1{
+    padding-left: 0;
+    justify-items: center;
+  }
+
+}
+
+  @media(max-width:431px){
+
+  .padding1 img {
+    width: 50%;
+  }
+
+
+
+  .logo{
+    max-width: 82%;
+    height: auto;
+  }
+
+  .logo1{
+    display: none;
+  }
+
+  .logo2{
+    width: auto;
+    height: 45px;
+  }
+
+  .headerimg{
+    height: 20px;
+  }
+
+  .Photo{
+    flex-direction: column;
+  }
+
+  .Photo img{
+    max-width: 100%;
+    height: auto;
+  }
+
+  .button img{
+    max-width: 70%;
+    height: auto;
+  }
+
+  .button a{
+    display: flex;
+    justify-content: center;
+  }
+
+  .button{
+    padding-top: 10px;
+  }
+
+  .oln{
+    gap: 0;
+    justify-content: space-evenly;
+  }
+
+  .padding1 img{
+    width: 90%;
+    height: auto;
+  }
+
+  .padding1{
+    padding-left: 0;
+    justify-items: center;
+  }
+
+  .hr{
+    max-width: 100%; 
+    height:auto;
+  }
+
+  .oln li a{
+    font-size: small;
+    font-weight: bolder;
+  }
+
 }

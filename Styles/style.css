@@ -10,6 +10,65 @@ header{
     padding: 10px;
 }
 
+h1,p{
+    color:white;
+}
+
+section,article{
+    background-color: rgb(24,21,18);
+}
+
+a{
+    color:black;
+    text-decoration: none;
+}
+
+nav {
+  flex-grow: 1;
+}
+
+
+
+.nav1 {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  width: auto;
+  max-width: 100%; 
+}
+
+.logo1{
+    padding-left: 10px;
+    width: auto;
+    height: 70px;
+}
+
+.logo2{
+    margin-left: 20px;
+    width: auto;
+    height: 70px;
+}
+
+.oln{
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    padding:0;
+    margin:0;
+    list-style-type: none;
+}
+
+
+.oln li a {
+  font-weight: bold;
+  font-style:normal; 
+  font-size:large;
+  color:white;
+  font-family: Verdana, sans-serif;;
+}
+
+
 .headerimg{
     width: auto;
     height: 45px;
@@ -45,25 +104,11 @@ header{
     align-items: center;
     gap: 30px;
 }
-h1,p{
-    color:white;
-}
+
 
 .logo {
   width: auto;
   height: 200px;
-}
-
-.logo1{
-    padding-left: 10px;
-    width: auto;
-    height: 70px;
-}
-
-.logo2{
-    margin-left: 20px;
-    width: auto;
-    height: 70px;
 }
 
 .button{
@@ -77,46 +122,34 @@ h1,p{
     border-radius: 10px;
 }
 
+
 .Text{
     padding: 50px;
 }
 
-.login{
-  padding-top: 100px;
-  color: white;
-}
-
-
-
-.oln{
-    margin: 0;
+.Stalker1{
     display: flex;
-    justify-content: space-around;
-    gap: 30px;
-    padding:0;
-    margin:0;
-    list-style-type: none;
+    justify-content:center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 10px;
 }
 
-section,article{
-    background-color: rgb(24,21,18);
+.hr{
+    width:500px; 
+    height:25px;
 }
 
-a{
-    color:black;
-    text-decoration: none;
+.Photo{
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
 }
-
-.oln li a {
-  font-weight: bold;
-  font-style:normal; 
-  font-size:large;
-  color:white;
-  font-family: Verdana, sans-serif;;
-}
-
-.Pidtrimka{
-    position: fixed;
+.Photo img{
+    width: auto;
+    height: 40vh;
+    border-radius: 10px;
 }
 
 .padding{
@@ -125,6 +158,16 @@ a{
     display: flex;
     flex-direction: column;
 }
+
+
+
+.login{
+  padding-top: 100px;
+  color: white;
+}
+
+
+
 
 .padding1{
     padding-top: 10px;
@@ -143,42 +186,12 @@ a{
 }
 
 
-.nav1 {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  width: auto;
-  max-width: 100%; 
-}
 
-nav {
-  flex-grow: 1;
-}
 
-.Stalker1{
-    display: flex;
-    justify-content:center;
-    text-align: center;
-    align-items: center;
-    flex-direction: column;
-    padding-bottom: 10px;
-}
 
-.Photo{
-    display: flex;
-    align-items: center;
-    padding-top: 15px;
-}
-.Photo img{
-    width: auto;
-    height: 40vh;
-    border-radius: 10px;
-}
 
-.hr{
-    width:500px; 
-    height:25px;
-}
+
+
 
 
 
@@ -321,3 +334,9 @@ nav {
   }
 
 }
+
+  @media(max-width:370px){
+    .headerimg{
+      display: none;
+    }
+  }

@@ -1,5 +1,18 @@
 header {
-  background: linear-gradient(180deg, #181512, #181512 24.27%, rgba(24, 21, 18, 0.8) 71.5%, rgba(24, 21, 18, 0.7019607843) 78.4%, rgba(24, 21, 18, 0.6) 81.85%, rgba(24, 21, 18, 0.5019607843) 85.08%, rgba(24, 21, 18, 0.4) 88.53%, rgba(24, 21, 18, 0.3019607843) 91.55%, rgba(24, 21, 18, 0.2) 94.14%, rgba(24, 21, 18, 0.1019607843) 97.37%, rgba(24, 21, 18, 0));
+  background: linear-gradient(
+    180deg,
+    #181512,
+    #181512 24.27%,
+    #181512cc 71.5%,
+    #181512b3 78.4%,
+    #18151299 81.85%,
+    #18151280 85.08%,
+    #18151266 88.53%,
+    #1815124d 91.55%,
+    #18151233 94.14%,
+    #1815121a 97.37%,
+    #18151200
+  );
   position: sticky;
   top: 0;
   display: flex;
@@ -54,13 +67,16 @@ nav {
   gap: 30px;
   padding: 0;
   list-style-type: none;
-}
-.oln li a {
-  font-weight: bold;
-  font-style: normal;
-  font-size: large;
-  color: white;
-  font-family: Verdana, sans-serif;
+
+  li {
+    a {
+      font-weight: bold;
+      font-style: normal;
+      font-size: large;
+      color: white;
+      font-family: Verdana, sans-serif;
+    }
+  }
 }
 
 .headerimg {
@@ -75,14 +91,14 @@ nav {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .Background {
   height: 100vh;
   margin-top: -70px;
-    display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .Background1 {
@@ -105,11 +121,12 @@ nav {
 .button {
   display: flex;
   gap: 20px;
-}
-.button img {
-  width: auto;
-  height: 50px;
-  border-radius: 10px;
+
+  img {
+    width: auto;
+    height: 50px;
+    border-radius: 10px;
+  }
 }
 
 .Text {
@@ -134,11 +151,12 @@ nav {
   display: flex;
   align-items: center;
   padding-top: 15px;
-}
-.Photo img {
-  width: auto;
-  height: 40vh;
-  border-radius: 10px;
+
+  img {
+    width: auto;
+    height: 40vh;
+    border-radius: 10px;
+  }
 }
 
 .padding {
@@ -163,118 +181,152 @@ nav {
   height: auto;
   padding-left: 80px;
   padding-bottom: 100px;
-}
-.padding1 img {
-  border-radius: 10px;
+
+  img {
+    border-radius: 10px;
+  }
 }
 
+// Медиазапросы
+
 @media (max-width: 1280px) {
-  .padding1 img {
-    width: 50%;
+  .padding1 {
+    img {
+      width: 50%;
+    }
   }
+
   .logo {
     max-width: 82%;
     height: auto;
   }
+
   .logo1,
   .logo2 {
     display: none;
   }
+
   .headerimg {
     height: 20px;
   }
+
   .Photo {
     flex-direction: column;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
   }
-  .Photo img {
-    max-width: 100%;
-    height: auto;
-  }
+
   .button {
     padding-top: 10px;
+
+    img {
+      max-width: 70%;
+      height: auto;
+    }
+
+    a {
+      display: flex;
+      justify-content: center;
+    }
   }
-  .button img {
-    max-width: 70%;
-    height: auto;
-  }
-  .button a {
-    display: flex;
-    justify-content: center;
-  }
+
   .oln {
     gap: 0;
     justify-content: space-evenly;
   }
+
   .padding1 {
     padding-left: 0;
     justify-items: center;
-  }
-  .padding1 img {
-    width: 75%;
-    height: auto;
+
+    img {
+      width: 75%;
+      height: auto;
+    }
   }
 }
+
 @media (max-width: 431px) {
-  .padding1 img {
-    width: 50%;
+  .padding1 {
+    img {
+      width: 50%;
+    }
   }
+
   .logo {
     max-width: 82%;
     height: auto;
   }
+
   .logo1 {
     display: none;
   }
+
   .logo2 {
     width: auto;
     height: 45px;
   }
+
   .headerimg {
     height: 20px;
   }
+
   .Photo {
     flex-direction: column;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
   }
-  .Photo img {
-    max-width: 100%;
-    height: auto;
-  }
+
   .button {
     padding-top: 10px;
+
+    img {
+      max-width: 70%;
+      height: auto;
+    }
+
+    a {
+      display: flex;
+      justify-content: center;
+    }
   }
-  .button img {
-    max-width: 70%;
-    height: auto;
-  }
-  .button a {
-    display: flex;
-    justify-content: center;
-  }
+
   .oln {
     gap: 0;
     justify-content: space-evenly;
+
+    li {
+      a {
+        font-size: small;
+        font-weight: bolder;
+      }
+    }
   }
-  .oln li a {
-    font-size: small;
-    font-weight: bolder;
-  }
+
   .padding1 {
     padding-left: 0;
     justify-items: center;
+
+    img {
+      width: 90%;
+      height: auto;
+    }
   }
-  .padding1 img {
-    width: 90%;
-    height: auto;
-  }
+
   .hr {
     max-width: 100%;
     height: auto;
   }
 }
+
 @media (max-width: 370px) {
   .headerimg {
     display: none;
   }
 }
-
-/*# sourceMappingURL=style.css.map */

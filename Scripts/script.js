@@ -30,3 +30,59 @@ function ImagesArrayF(){
 }
 
 setTimeout(ImagesArrayF,5000)
+
+
+function checkLogin(login){
+    const loginMogno=/^[a-zA-Z0-9_]{4,16}$/;
+    if (login.match(loginMogno)){
+        console.log("Логін можно використовувати")
+        return true
+    }
+    else{
+        console.log("Логін не можна використовувати")
+        return false
+    }
+}
+
+const login1 = "Abvg32_"
+const login2 = "Кириллица"
+const login3 = "Abv"
+
+console.log("Перевірка логіну",checkLogin(login3))
+
+function checkEmail(email){
+    const emailMogno = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    if (email.match(emailMogno)){
+               console.log("Електронну скриньку можно використовувати")
+        return true
+    }
+    else{
+        console.log("Електронну скриньку не можна використовувати")
+        return false
+    }
+}
+
+const email1 ="Sobaka@gmail.com"
+const email2 ="Собака@джмаіл.ком"
+const email3 ="SobGmailCom"
+
+console.log("Перевірка електронної скриньки:",checkEmail(email1))
+
+function checkPhone(phone){
+    const PhoneMogno = /^0\d{8}$/;
+        if (phone.search(PhoneMogno)==0){
+               console.log("Телефон можно використовувати")
+        return true
+    }
+    else{
+        console.log("Телефон не можна використовувати")
+        return false
+    }
+}
+
+const phone1 = "098832221"
+const phone2 = "333212414"
+const phone3 = "03124141"
+
+console.log("Перевірка номеру телефона:",checkPhone(phone1))
+

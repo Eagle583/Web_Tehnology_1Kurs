@@ -7,3 +7,12 @@ console.log("Колір Бади",Bodycolor);
 const h1 = document.getElementById("1");
 const FontSizeH1 = window.getComputedStyle(h1).fontSize;
 console.log("Розмір h1:",FontSizeH1);
+
+const section = document.getElementById("section1")
+section.addEventListener("mouseenter",function(){
+    section.style.backgroundColor = 'red';
+    console.log("proverka")
+});
+section.addEventListener("mouseleave",function(){
+    section.style.backgroundColor = 'rgb(24, 21, 18)';
+});

@@ -86,3 +86,13 @@ const phone3 = "03124141"
 
 console.log("Перевірка номеру телефона:",checkPhone(phone1))
 
+function ClearLogin(login) {
+    const loginBezProbelov = /\s/g;
+    const loginNeMogna = /[^a-zA-Z0-9_]/g;
+    let Clearlogin = login.replace(loginBezProbelov,"")
+    Clearlogin=login.replace(loginNeMogna,""); 
+    return Clearlogin;
+}
+
+const Clearlogin1 = "Ім'яUser_!$%@#$   "; 
+console.log(ClearLogin(Clearlogin1))

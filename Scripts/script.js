@@ -16,3 +16,17 @@ section.addEventListener("mouseenter",function(){
 section.addEventListener("mouseleave",function(){
     section.style.backgroundColor = 'rgb(24, 21, 18)';
 });
+
+function ImagesArrayF(){
+    let imagesArrey = ["Images/Cat1.jpg","Images/Cat2.jpg","Images/Cat3.jpg"]
+    const IMGZone = document.getElementById("ArrayIMG")
+    const Fragment = document.createDocumentFragment();
+    imagesArrey.forEach(function(itemUrl){
+        const IMGelement= document.createElement('img');
+        IMGelement.src = itemUrl;
+        Fragment.appendChild(IMGelement);
+    })
+    IMGZone.appendChild(Fragment)
+}
+
+setTimeout(ImagesArrayF,5000)

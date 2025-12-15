@@ -96,3 +96,26 @@ function ClearLogin(login) {
 
 const Clearlogin1 = "Ім'яUser_!$%@#$   "; 
 console.log(ClearLogin(Clearlogin1))
+
+
+const imput1 = document.getElementById("Input1")
+const imput2 = document.getElementById("Input2")
+function SpilniSlova(){
+const imputBezProbelov1 = imput1.value.trim().toLowerCase();
+const imputBezProbelov2 = imput2.value.trim().toLowerCase();
+const imputBeZnakov1 = imputBezProbelov1.replace(/!.,?/,"")
+const imputBeZnakov2 = imputBezProbelov2.replace(/!.,?/,"")  
+const masivSlov1 = imputBeZnakov1.split(" ") 
+const masivSlov2 = imputBeZnakov2.split(" ")
+const set_slov = new Set(masivSlov1)
+const spilniSlova = []
+masivSlov2.forEach(function proverkaSlov(slovo){
+    if(set_slov.has(slovo)){
+        spilniSlova.push(slovo)
+    }
+})
+const UbiraemPovtori = Array.from(new Set(spilniSlova))
+const ResultatSpilnihSliv = UbiraemPovtori.join(", ")
+document.getElementById("resultat").innerHTML=ResultatSpilnihSliv
+}
+

@@ -119,3 +119,22 @@ const ResultatSpilnihSliv = UbiraemPovtori.join(", ")
 document.getElementById("resultat").innerHTML=ResultatSpilnihSliv
 }
 
+
+const Api_URL ="https://http.cat/404"
+async function ApiURL(){
+    const Imagecat = document.getElementById("CatImage")
+    try{
+        await new Promise((resolve, reject) =>{
+            Imagecat.src =Api_URL
+            Imagecat.onload=resolve
+            Imagecat.onerror=reject
+        })
+    
+    Imagecat.style.display="block"
+}catch(error){
+    Imagecat.src=""
+    Imagecat.style.display="none"
+    console.log("Помилка загрузки.")
+}
+}
+

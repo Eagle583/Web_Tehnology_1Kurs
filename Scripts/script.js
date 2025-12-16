@@ -120,6 +120,9 @@ document.getElementById("resultat").innerHTML=ResultatSpilnihSliv
 }
 
 
+
+
+
 const Api_URL ="https://http.cat/404"
 async function ApiURL(){
     const Imagecat = document.getElementById("CatImage")

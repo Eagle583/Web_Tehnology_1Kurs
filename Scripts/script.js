@@ -103,8 +103,8 @@ const imput2 = document.getElementById("Input2")
 function SpilniSlova(){
 const imputBezProbelov1 = imput1.value.trim().toLowerCase();
 const imputBezProbelov2 = imput2.value.trim().toLowerCase();
-const imputBeZnakov1 = imputBezProbelov1.replace(/!.,?/,"")
-const imputBeZnakov2 = imputBezProbelov2.replace(/!.,?/,"")  
+const imputBeZnakov1 = imputBezProbelov1.replace(/[!.,?]/g,"")
+const imputBeZnakov2 = imputBezProbelov2.replace(/[!.,?]/g,"")  
 const masivSlov1 = imputBeZnakov1.split(" ") 
 const masivSlov2 = imputBeZnakov2.split(" ")
 const set_slov = new Set(masivSlov1)

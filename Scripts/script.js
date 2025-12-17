@@ -18,7 +18,7 @@ section.addEventListener("mouseleave",function(){
 });
 
 function ImagesArrayF(){
-    let imagesArrey = ["Images/Cat1.jpg","Images/Cat2.jpg","Images/Cat3.jpg"]
+    let imagesArrey = ["https://media.4-paws.org/c/f/0/6/cf065689b6f82a397b40846d88b622ba5068de84/VIER%20PFOTEN_2016-07-08_011-4993x3455.jpg","https://upload.wikimedia.org/wikipedia/commons/4/4d/Cat_November_2010-1a.jpg","https://images.squarespace-cdn.com/content/v1/607f89e638219e13eee71b1e/1684821560422-SD5V37BAG28BURTLIXUQ/michael-sum-LEpfefQf4rU-unsplash.jpg"]
     const IMGZone = document.getElementById("ArrayIMG")
     const Fragment = document.createDocumentFragment();
     imagesArrey.forEach(function(itemUrl){
